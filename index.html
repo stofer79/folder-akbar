@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akbar Hidayat ✦ Mahasiswa Teknik Informatika</title>
+  <meta name="description" content="Halo! Aku Akbar Hidayat, mahasiswa Teknik Informatika di Universitas Nusa Putra yang suka ngoding, ngulik teknologi, dan bikin project seru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">akbar<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#works">projects</a>
+      <a href="#contact" class="chip chip-pink">let's connect ✌️</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="sticker sticker-1">✦ open for internship</div>
+      <div class="sticker sticker-2">student dev 🎓</div>
+
+      <p class="mono hello">hi, i'm 👋</p>
+      <h1 class="hero-title">
+        <span class="line">AKBAR</span>
+        <span class="line outline">HIDAYAT<span class="star">✺</span></span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-desc">
+          <span class="highlight">Mahasiswa Teknik Informatika</span> di Universitas Nusa Putra.
+          Suka ngoding, ngulik teknologi baru, dan ubah ide jadi project nyata — <span class="mono rotating" id="rotating">coder</span>
+        </p>
+        <div class="hero-cta">
+          <a href="#works" class="btn btn-lime">lihat project ↘</a>
+          <a href="#contact" class="btn btn-white">kontak aku</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>TEKNIK INFORMATIKA ✦ NUSA PUTRA ✦ WEB DEVELOPMENT ✦ UI/UX ✦ DATABASE ✦ PROBLEM SOLVING ✦ </span>
+        <span>TEKNIK INFORMATIKA ✦ NUSA PUTRA ✦ WEB DEVELOPMENT ✦ UI/UX ✦ DATABASE ✦ PROBLEM SOLVING ✦ </span>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <h2 class="section-title reveal">about me <span class="emoji-spin">🌀</span></h2>
+      <div class="bento">
+        <div class="card card-big card-yellow reveal">
+          <p class="mono label">// siapa aku?</p>
+          <p class="big-text">
+            Aku Akbar, mahasiswa <u>Teknik Informatika</u> di Universitas Nusa Putra 🎓.
+            Lagi fokus belajar web development dan software engineering, dan percaya kalau
+            ngoding itu bukan cuma soal kode — tapi soal nyelesaiin masalah nyata.
+          </p>
+        </div>
+        <div class="card card-purple reveal">
+          <p class="stat" data-count="10">0</p>
+          <p class="mono">project & tugas</p>
+        </div>
+        <div class="card card-pink reveal">
+          <p class="stat" data-count="5">0</p>
+          <p class="mono">bahasa pemrograman</p>
+        </div>
+        <div class="card card-white reveal">
+          <p class="mono label">// currently</p>
+          <ul class="now-list">
+            <li>💻 ngerjain tugas praktikum</li>
+            <li>📚 belajar framework Laravel & React</li>
+            <li>☕ begadang ditemani kopi</li>
+          </ul>
+        </div>
+        <div class="card card-lime reveal">
+          <p class="mono label">// kampus</p>
+          <p class="big-text">Universitas Nusa Putra, Sukabumi 📍</p>
+          <p class="mono small" id="localTime">--:--</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title reveal">my toolkit <span class="emoji-spin">🛠️</span></h2>
+      <div class="skills">
+        <span class="skill reveal" style="--c: var(--lime)">HTML & CSS</span>
+        <span class="skill reveal" style="--c: var(--pink)">JavaScript</span>
+        <span class="skill reveal" style="--c: var(--yellow)">Python</span>
+        <span class="skill reveal" style="--c: var(--purple)">Java</span>
+        <span class="skill reveal" style="--c: var(--blue)">PHP</span>
+        <span class="skill reveal" style="--c: var(--orange)">MySQL</span>
+        <span class="skill reveal" style="--c: var(--lime)">Laravel</span>
+        <span class="skill reveal" style="--c: var(--pink)">React</span>
+        <span class="skill reveal" style="--c: var(--yellow)">Git & GitHub</span>
+        <span class="skill reveal" style="--c: var(--purple)">Figma</span>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <h2 class="section-title reveal">projects <span class="emoji-spin">✨</span></h2>
+      <div class="works">
+        <a href="#" class="work reveal" style="--accent: var(--pink)">
+          <div class="work-emoji">📚</div>
+          <div class="work-info">
+            <p class="mono">01 — web app</p>
+            <h3>Sistem Informasi Perpustakaan</h3>
+            <p>Aplikasi peminjaman buku berbasis web dengan PHP & MySQL.</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="#" class="work reveal" style="--accent: var(--lime)">
+          <div class="work-emoji">🧾</div>
+          <div class="work-info">
+            <p class="mono">02 — desktop</p>
+            <h3>Aplikasi Kasir Sederhana</h3>
+            <p>Program kasir untuk UMKM, dibuat dengan Java.</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="#" class="work reveal" style="--accent: var(--yellow)">
+          <div class="work-emoji">🎨</div>
+          <div class="work-info">
+            <p class="mono">03 — ui/ux</p>
+            <h3>Redesign Portal Mahasiswa</h3>
+            <p>Konsep desain ulang portal akademik biar lebih simpel di Figma.</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="#" class="work reveal" style="--accent: var(--purple)">
+          <div class="work-emoji">🤖</div>
+          <div class="work-info">
+            <p class="mono">04 — python</p>
+            <h3>Chatbot Info Kampus</h3>
+            <p>Bot sederhana untuk jawab pertanyaan seputar kampus.</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact reveal">
+        <div class="sticker sticker-3">DM terbuka 💌</div>
+        <p class="mono">// mau kolaborasi atau tawarin magang?</p>
+        <h2 class="contact-title">yuk bikin<br />sesuatu yang <span class="highlight">keren</span>.</h2>
+        <a href="mailto:akbarhidayat@email.com" class="btn btn-lime big">akbarhidayat@email.com</a>
+        <div class="socials">
+          <a href="https://instagram.com/stof3_r" target="_blank" rel="noopener" class="chip">📸 @stof3_r</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="chip">github</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="chip">linkedin</a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" class="chip">tiktok</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© <span id="year"></span> akbar hidayat — teknik informatika, universitas nusa putra</p>
+    <a href="#home" class="mono">back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
